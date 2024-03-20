@@ -1,0 +1,98 @@
+{
+    "sesiones": [
+            {
+                "id_sesion":1,
+                "titulo": "El Señor de los Anillos: La Comunidad del Anillo",
+                "descripcion": "En la Tierra Media, el joven hobbit Frodo Bolsón hereda un anillo. Sin embargo, este anillo esconde un gran poder que puede desencadenar el mal en el mundo si cae en manos equivocadas.",
+                "edad_recomendada": "Apta para todo público",
+                "dia_semana": "Viernes",
+                "dia_mes": "25",
+                "horario": "16:00",
+                "imagen_poster": "ring.jpg"
+            },
+            {
+                "id_sesion":2,
+                "titulo": "Titanic",
+                "descripcion": "Un joven artista y una joven de clase alta se enamoran a bordo del Titanic, pero su romance se ve amenazado por el trágico destino del famoso trasatlántico.",
+                "edad_recomendada": "Mayores de 12 años",
+                "dia_semana": "Sábado",
+                "dia_mes": "26",
+                "horario": "18:00",
+                "imagen_poster": "titanic.jpg"
+            },
+            {
+                "id_sesion":3,
+                "titulo": "El Rey León",
+                "descripcion": "Simba, un joven león heredero al trono, es injustamente acusado de la muerte de su padre. Con la ayuda de sus amigos, Simba debe enfrentarse a su tío Scar y reclamar su lugar en el ciclo de la vida.",
+                "edad_recomendada": "Apta para todo público",
+                "dia_semana": "Domingo",
+                "dia_mes": "27",
+                "horario": "20:00",
+                "imagen_poster": "el_rey_leon.jpg"
+            },
+            {
+                "id_sesion":4,
+                "titulo": "Toy Story",
+                "descripcion": "Woody, un juguete vaquero, se siente amenazado por la llegada de Buzz Lightyear, un juguete espacial. Sin embargo, ambos deben unirse para regresar a casa después de ser separados de su dueño.",
+                "edad_recomendada": "Apta para todo público",
+                "dia_semana": "Lunes",
+                "dia_mes": "28",
+                "horario": "16:00",
+                "imagen_poster": "toystory.jpg"
+            },
+            {
+                "titulo": "Jurassic Park",
+                "descripcion": "Un parque temático lleno de dinosaurios criados a partir de ADN prehistórico se convierte en un caos total cuando un huracán deshabilita la energía y los depredadores escapan de su contención.",
+                "edad_recomendada": "Mayores de 10 años",
+                "dia_semana": "Martes",
+                "dia_mes": "1",
+                "horario": "18:00",
+                "imagen_poster": "jurassic_park.jpg"
+            },
+            {
+                "titulo": "Harry Potter y la Piedra Filosofal",
+                "descripcion": "Un niño huérfano descubre que es un mago y es invitado a asistir a la Escuela de Magia y Hechicería de Hogwarts, donde se enfrenta a su destino como el niño que sobrevivió al ataque de Lord Voldemort.",
+                "edad_recomendada": "Mayores de 10 años",
+                "dia_semana": "Miércoles",
+                "dia_mes": "2",
+                "horario": "20:00",
+                "imagen_poster": "harry_potter_y_la_piedra_filosofal.jpg"
+            },
+            {
+                "titulo": "Frozen",
+                "descripcion": "Anna, una joven optimista, se embarca en un viaje épico junto a Kristoff, un hombre de montaña, y su leal reno Sven para encontrar a su hermana Elsa, cuyos poderes de hielo han atrapado al reino de Arendelle en un invierno eterno.",
+                "edad_recomendada": "Apta para todo público",
+                "dia_semana": "Jueves",
+                "dia_mes": "3",
+                "horario": "16:00",
+                "imagen_poster": "frozen.jpg"
+            },
+            {
+                "titulo": "Piratas del Caribe: La Maldición del Perla Negra",
+                "descripcion": "El Capitán Jack Sparrow debe rescatar a Elizabeth, la hija del gobernador, de las manos de los piratas malditos que buscan revertir una maldición que los ha dejado condenados a ser esqueletos por la eternidad.",
+                "edad_recomendada": "Mayores de 12 años",
+                "dia_semana": "Viernes",
+                "dia_mes": "4",
+                "horario": "18:00",
+                "imagen_poster": "piratas_del_caribe_la_maldicion_del_perla_negra.jpg"
+            },
+            {
+                "titulo": "La La Land",
+                "descripcion": "En Los Ángeles, un pianista de jazz y una aspirante a actriz se enamoran y enfrentan los desafíos del éxito y el fracaso en la búsqueda de sus sueños.",
+                "edad_recomendada": "Mayores de 12 años",
+                "dia_semana": "Sábado",
+                "dia_mes": "5",
+                "horario": "20:00",
+                "imagen_poster": "la_la_land.jpg"
+            },
+            {
+                "titulo": "Buscando a Nemo",
+                "descripcion": "El pez payaso Marlin se embarca en un peligroso viaje por el océano para rescatar a su hijo Nemo, que ha sido capturado por un buceador y llevado a un acuario.",
+                "edad_recomendada": "Apta para todo público",
+                "dia_semana": "Domingo",
+                "dia_mes": "6",
+                "horario": "16:00",
+                "imagen_poster": "buscando_a_nemo.jpg"
+            }
+        ]
+}   

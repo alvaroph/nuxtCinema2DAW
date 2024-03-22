@@ -44,7 +44,7 @@ import {useCompraStore} from '../../store/compra.js'
          created(){
             console.log("cargando datos de la sesion actual y su ocupacion")
 
-            fetch(`http://cinema.daw.inspedralbes.cat/api.php/records/SESION/${this.$route.params.id}?join=PELICULA`)
+            fetch(`https://alvaro.daw.inspedralbes.cat/api.php/records/SESION/${this.$route.params.id}?join=PELICULA`)
             .then(response => response.json())
             .then(data =>{console.log(data); 
                           this.sesionActual=data; 
@@ -54,7 +54,7 @@ import {useCompraStore} from '../../store/compra.js'
                         })
             .catch(error => console.error('Error:', error));
             
-            fetch(`http://cinema.daw.inspedralbes.cat/api.php/records/ENTRADA?filter=id_sesion,eq,${this.$route.params.id}`)
+            fetch(`https://alvaro.daw.inspedralbes.cat/api.php/records/ENTRADA?filter=id_sesion,eq,${this.$route.params.id}`)
             .then(response => response.json())
             .then(data =>{console.log(data); this.ocupacion=data.records.map(b=>b.id_butaca)})
             .catch(error => console.error('Error:', error));

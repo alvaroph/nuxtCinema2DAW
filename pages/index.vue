@@ -22,7 +22,7 @@
          mounted(){
             console.log("cargando sesiones")
             
-            fetch('https://cinema.daw.inspedralbes.cat/api.php/records/SESION?join=PELICULA')
+            fetch('https://alvaro.daw.inspedralbes.cat/api.php/records/SESION?join=PELICULA')
             .then(response => response.json())
             .then(data =>{console.log(data.sesiones); this.sesiones=data.records})
             .catch(error => console.error('Error:', error));

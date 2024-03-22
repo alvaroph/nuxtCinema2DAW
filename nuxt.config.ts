@@ -29,15 +29,7 @@ export default defineNuxtConfig({
     // ...
     '@pinia/nuxt',
     'usebootstrap',
-    'nuxt-security'
+    
 
   ],
-  security: {
-    // options
-    corsHandler: {
-      // options
-      origin:'*',
-      methods:'*'
-    }
-  },
 })

@@ -24,11 +24,20 @@ export default defineNuxtConfig({
     '/ssr': { swr: 3600 },
     
   },
-
+  
   modules: [
     // ...
     '@pinia/nuxt',
-    'usebootstrap'
+    'usebootstrap',
+    'nuxt-security'
 
   ],
+  security: {
+    // options
+    corsHandler: {
+      // options
+      origin:'*',
+      methods:'*'
+    }
+  },
 })

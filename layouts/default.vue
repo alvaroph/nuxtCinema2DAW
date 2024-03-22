@@ -1,3 +1,7 @@
+<script setup >
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
+</script>
+
 <template>
     <div>
         <SpeedInsights/>
@@ -21,7 +25,3 @@
         }
 
 </style>
-
-<script>
-import { SpeedInsights } from "@vercel/speed-insights/nuxt"
-</script>

@@ -1,5 +1,6 @@
 <template>
     <div>
+        <SpeedInsights/>
         <nav class="navbar ">
         <div class="container">
             <a class="navbar-brand" href="/">
@@ -20,3 +21,7 @@
         }
 
 </style>
+
+<script>
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
+</script>

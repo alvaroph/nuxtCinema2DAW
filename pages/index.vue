@@ -1,6 +1,5 @@
 <template>
     <div>
-        <CobaGraph />
         <h1>Cinema Pedralbes </h1>
         <div class="container">
             <div v-for="sesion in sesiones" :key="sesion.id_sesion">

@@ -3,6 +3,8 @@
       <div class="container" v-if="loaded">
       <!-- Code for the div when loaded is true -->
       <div class="columna infoMovie">
+        <CobaGraph />
+      
             <FichaSesion :datosSesion="sesionActual"></FichaSesion>
       </div>
      

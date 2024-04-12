@@ -31,6 +31,7 @@
 
 <script>
 import {useCompraStore} from '../../store/compra.js'
+import {socket} from '../../socket'
 
     export default {
       data() {
@@ -103,7 +104,19 @@ import {useCompraStore} from '../../store/compra.js'
             this.$router.push('/confirmacion');
 
           }
-        }
+        },
+        mounted() {
+          socket.on('empezarCuentaAtras', (users) => {
+            console.log('empezarCuentaAtras', users)
+          })
+          
+          socket.on('cuentaAtras', (timer) => {
+                console.log('cuentaAtras', timer)
+            })
+            socket.on('empezarPartida', (users) => {
+                console.log('empezarPartida', users)
+            })
+    }
       }
 </script>
 

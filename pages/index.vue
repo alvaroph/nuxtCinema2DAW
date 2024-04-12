@@ -1,10 +1,13 @@
 <template>
     <div>
+        <CobaGraph />
         <h1>Cinema Pedralbes </h1>
         <div class="container">
             <div v-for="sesion in sesiones" :key="sesion.id_sesion">
                 <FichaSesion :datosSesion="sesion">
                     <nuxt-link class="btn btn-primary" :to="'compra/'+sesion.id_sesion">Comprar entradas</nuxt-link>           
+                    <nuxt-link class="btn btn-primary" :to="'compra/'+sesion.id_sesion">Comprar entradas</nuxt-link>           
+               
                 </FichaSesion>
             </div>
         </div>
@@ -12,6 +15,7 @@
 </template>
 
 <script>
+
     export default {
         data() {
             return {
@@ -19,14 +23,14 @@
                     ]
             }
         },
-         mounted(){
+        async mounted(){
             console.log("cargando sesiones")
             
-            fetch('https://alvaro.daw.inspedralbes.cat/api.php/records/SESION?join=PELICULA')
-            .then(response => response.json())
-            .then(data =>{console.log(data.sesiones); this.sesiones=data.records})
-            .catch(error => console.error('Error:', error));
-        }
+            const { data, pending, error, refresh }  = await useFetch('https://alvaro.daw.inspedralbes.cat/api.php/records/SESION?join=PELICULA');
+            console.log(pending)
+            console.log(toRaw(data.value.records)); 
+            this.sesiones=toRaw(data.value.records);
+            }
     }
 </script>
 

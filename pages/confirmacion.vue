@@ -15,7 +15,7 @@
         </div>
         
       
-        <button class="btn btn-warning">Confirmar Compra</button>
+        <button @click="compra()" class="btn btn-warning">Confirmar Compra</button>
     </div>
 </template>
 
@@ -32,6 +32,11 @@
             const store = useCompraStore();
             this.sesion = store.sesion;
             this.seleccion = store.seleccion;           
+        },
+        methods: {
+            compra(){   
+                console.log(this.seleccion)
+            }
         }
     }
 </script>

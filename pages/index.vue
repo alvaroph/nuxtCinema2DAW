@@ -6,7 +6,6 @@
             <div v-for="sesion in sesiones" :key="sesion.id_sesion">
                 <FichaSesion :datosSesion="sesion">
                     <nuxt-link class="btn btn-primary" :to="'compra/'+sesion.id_sesion">Comprar entradas</nuxt-link>           
-                    <nuxt-link class="btn btn-primary" :to="'compra/'+sesion.id_sesion">Comprar entradas</nuxt-link>           
                
                 </FichaSesion>
             </div>
@@ -14,24 +13,12 @@
     </div>
 </template>
 
-<script>
-
-    export default {
-        data() {
-            return {
-                sesiones: [
-                    ]
-            }
-        },
-        async mounted(){
-            console.log("cargando sesiones")
-            
-            const { data, pending, error, refresh }  = await useFetch('https://alvaro.daw.inspedralbes.cat/api.php/records/SESION?join=PELICULA');
-            console.log(pending)
-            console.log(toRaw(data.value.records)); 
-            this.sesiones=toRaw(data.value.records);
-            }
-    }
+<script setup>
+     const { data:sesiones, pending, error, refresh }  = await useFetch('https://alvaro.daw.inspedralbes.cat/api.php/records/SESION?join=PELICULA',{
+        transform: (products) => products.records,
+     });
+       
+    
 </script>
 
 <style scoped>
